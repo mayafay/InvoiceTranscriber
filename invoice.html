@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Invoice Uploader</title>
+
+    <style>
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body style="margin: 0;
+            height: 100vh;
+            background-image: url('form-background.jpg');
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;">
+    <div class="container" style=" width:600px;
+                                padding: 20px;
+                                background: transparent;
+                                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                                text-align: center;">
+        <h1 style="text-align: center; ">Upload an Invoice:</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="formFileLg" class="form-label"></label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file" name="attachment" required>
+            </div>
+            <button type="submit" class="btn btn-dark">Upload File</button>
+        </form>
+    </div>    
+</body>
+</html>
